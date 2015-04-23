@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:background="@drawable/popup"
+
+    >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_titlu_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="1. Selecteaza ora taskului"
+                android:textColor="@color/albastru"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TimePicker
+                android:id="@+id/task_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"></TimePicker>
+
+            <TextView
+                android:id="@+id/text_titlu_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="2. Selecteaza data taskului"
+                android:textColor="@color/albastru"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <DatePicker
+                android:id="@+id/task_date"
+                android:calendarViewShown="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"></DatePicker>
+
+            <TextView
+                android:id="@+id/text_titlu_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="3. Alege tipul evenimentului"
+                android:textColor="@color/albastru"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <razvan.gheorghe.taskmanagement.utils.NoDefaultSpinner
+                android:id="@+id/spTip"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:entries="@array/Tip_eveniment"
+                android:prompt="@string/prompt_tip"/>
+
+            <TextView
+                android:id="@+id/text_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="4. Alege prioritatea"
+                android:textColor="@color/albastru"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <razvan.gheorghe.taskmanagement.utils.NoDefaultSpinner
+                android:id="@+id/spPrioritate"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:entries="@array/Prioritate_eveniment"
+                android:prompt="@string/prompt_prioritate"/>
+
+            <TextView
+                android:id="@+id/text_titlu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="5. Adaugati titlu"
+                android:textColor="@color/albastru"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtTitlu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Titlu"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/text_descriere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="6. Adaugati descriere(opt)"
+                android:textColor="@color/albastru"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtDescriere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Descriere"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_nu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="65dp"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/buton_rosu"
+                    android:text="Renunta"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_da"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/buton_verde"
+                    android:text="Salveaza"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>

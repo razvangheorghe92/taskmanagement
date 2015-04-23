@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">TaskManagement</string>
+    <string name="zero_taskuri">Nu exista taskuri salvate. Adaugati taskuri folosind butonul de mai sus.</string>
+    <string-array name="Tip_eveniment">
+        <item>Important</item>
+        <item>Optional</item>
+    </string-array>
+    <string name="prompt_tip">Tip eveniment</string>
+    <string-array name="Prioritate_eveniment">
+        <item>5(max)</item>
+        <item>4</item>
+        <item>3(med)</item>
+        <item>2</item>
+        <item>1(min)</item>
+    </string-array>
+    <string-array name="Perioada_evenimente">
+        <item>Toate</item>
+        <item>Astazi</item>
+        <item>Maine</item>
+        <item>Saptamana aceasta</item>
+        <item>Luna aceasta</item>
+    </string-array>
+    <string name="prompt_prioritate">Prioritate eveniment</string>
+    <string name="spin_perioada">Toate evenimentele</string>
+    <string name="facebook_app_id">1429633727331707</string>
+	
+    <string-array name="unitateMasura">
+        <item>buc</item>
+        <item>litru</item>
+        <item>kg</item>
+        <item>felie</item>
+    </string-array>
+</resources>

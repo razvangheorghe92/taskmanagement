@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="albastru">#065080</color>
+    <color name="darkGrey">#3D3D3D</color>
+    <color name="lightGrey">#a2a2a2</color>
+    <color name="albastru_adauga">#589DC4</color>
+    <color name="verde">#009245</color>
+    <color name="rosu">#cf3030</color>
+    <color name="MenuDarkGrey">#3D3D3D</color>
+    <color name="MenuLightGrey">#878787</color>
+
+
+
+</resources>
